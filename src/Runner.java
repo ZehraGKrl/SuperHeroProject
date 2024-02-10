@@ -22,7 +22,18 @@ public class Runner {
         //      "Mevcut Süper Kahramanlar: " + allHeroes
         //       "Çıkmak için q'ya basın..."
 
+        while (true) {
+            System.out.println("***** Süper Kahramanlar gösterisine hoş geldiniz *****");
+            System.out.println("***Mevcut Süper Kahramanlar***\n" + allHeroes);
+            System.out.println("Hangi süper kahramanı eklemek İstiyorsunuz?");
+            System.out.println("Çıkış Yapmak İçin Q'ya basınız.");
+            String cikis = input.nextLine();
+            if (cikis.equalsIgnoreCase("q")) {
+                System.out.println("Süper Kahraman dünyasından çıkış yaptınız. Görüşmek üzere...");
+                break;
+            }
 
+        }
 
 
         ////////////////////////////////////////////////////////////////////////////////////
