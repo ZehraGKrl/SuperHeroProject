@@ -24,9 +24,9 @@ public class Runner {
 
         while (true) {
             System.out.println("***** Süper Kahramanlar gösterisine hoş geldiniz *****");
-            System.out.println("***Mevcut Süper Kahramanlar***\n" + allHeroes);
-            System.out.println("Hangi süper kahramanı eklemek İstiyorsunuz?");
-            System.out.println("Çıkış Yapmak İçin Q'ya basınız.");
+            System.out.println("    ----------Mevcut Süper Kahramanlar----------" + "\n"+ allHeroes + "\n" );
+            System.out.println("Hangi süper kahramanı eklemek istiyorsunuz?");
+            System.out.println("Çıkış Yapmak isterseniz Q'ya basınız.");
             String cikis = input.nextLine();
             if (cikis.equalsIgnoreCase("q")) {
                 System.out.println("Süper Kahraman dünyasından çıkış yaptınız. Görüşmek üzere...");

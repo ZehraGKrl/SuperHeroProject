@@ -8,7 +8,7 @@ public class SpiderMan extends SuperHeroes {
 
     ///////////////////////////////////////////////////////////////////////
     public SpiderMan(String name, String gender, String aggression, String wisdom, String beauty, String webShootingAbility) {
-        super("Spider-Man","Erkek","700","750","800");
+        super("Spider Man","Erkek","700","750","800");
         setWebShootingAbility("Web Shooting");
         // TODO burada eksik olan kodu tamamlayin
          // SpiderMan nesnesi oluşturulurken ilk bu metod (constructor) çalışacak...
@@ -32,7 +32,7 @@ public class SpiderMan extends SuperHeroes {
         // Örümcek adamın ismiyle beraber extra attack özelliğini konsola yazdırın...
         //"Ayrıca, " + getName() + "örümcek ağı püskürtme yeteneği ile saldırabilir ve düşmanlarını etkisiz hale getirebilir."
         super.attack();
-        System.out.println(getName() + "örümcek ağı püskürtme yeteneği ile saldırabilir ve düşmanlarını etkisiz hale getirebilir.");
+        System.out.println(getName() + ", örümcek ağı püskürtme yeteneği ile saldırabilir ve düşmanlarını etkisiz hale getirebilir.");
 
 
 
@@ -44,7 +44,7 @@ public class SpiderMan extends SuperHeroes {
         //TODO: Bu metod çağrıldığında, örümcek adama has özelliği sadece konsola yazdırın.
         // getName() + ", örümcek ağı püskürtme yeteneğine sahiptir."
         super.exposeSecretPower();
-        System.out.println(getName() + "örümcek ağı püskürtme yeteneğine sahiptir.");
+        System.out.println(getName() + ", örümcek ağı püskürtme yeteneğine sahiptir.");
 
 
 
@@ -55,7 +55,7 @@ public class SpiderMan extends SuperHeroes {
         super.printInfo();
         //TODO: Bu metod çağrıldığında, tüm kahramanların özelliği yazdırıldığı gibi, konsola özrümcek adama has özelliği de yazdırın (@Override sayesinde)...
 
-        System.out.println("Spider-Man'in özelliği " +webShootingAbility);
+        System.out.println("Spider Man'e has özelliği, " +webShootingAbility);
 
 
     }

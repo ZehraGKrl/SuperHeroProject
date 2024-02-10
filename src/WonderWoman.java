@@ -4,7 +4,7 @@ public class WonderWoman extends SuperHeroes {
 
     public WonderWoman(String name, String gender, String aggression, String wisdom, String beauty, String lassoOfTruthAbility) {
         super("Wonder Woman", "Kadın", "800", "1000", "950");
-        setLassoOfTruthAbility("Doğruluk Kementi");
+        setLassoOfTruthAbility("Lasso of Truth");
 
     }
 
@@ -12,7 +12,8 @@ public class WonderWoman extends SuperHeroes {
         return lassoOfTruthAbility;
     }
 
-    public void setLassoOfTruthAbility(String lassoOfTruthAbility) {        this.lassoOfTruthAbility = lassoOfTruthAbility;
+    public void setLassoOfTruthAbility(String lassoOfTruthAbility) {
+        this.lassoOfTruthAbility = lassoOfTruthAbility;
 
 
     }
@@ -20,19 +21,19 @@ public class WonderWoman extends SuperHeroes {
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println("Wonder Woman'ın Özelliği = " + lassoOfTruthAbility);
+        System.out.println("Wonder Woman'a has Özelliği, " + lassoOfTruthAbility);
     }
 
     @Override
     public void attack() {
         super.attack();
-        System.out.println(getName() + "Wonder Woman'ın Kılıcı Vardır Ve Kılıcı İle Saldırır. ");
+        System.out.println(getName() + ", Wonder Woman'ın Kılıcı Vardır Ve Kılıcı İle Saldırır. ");
 
     }
 
     @Override
     public void exposeSecretPower() {
         super.exposeSecretPower();
-        System.out.println("Bilekliklerini Birbirine Vurunca Sismik Dalga Yaratır.");
+        System.out.println(getName() + ", bilekliklerini birbirine vurunca sismik dalga yaratır.");
     }
 }

@@ -3,7 +3,7 @@
 public class Superman extends SuperHeroes{
     private String flyingAbility;
     public Superman(String name, String gender, String aggression, String wisdom, String beauty, String flyingAbility) {
-        super("Superman", "erkek", "1000", "800", "900");
+        super("Superman", "Erkek", "1000", "800", "900");
         setFlyingAbility("Supersonic Flight");
     }
 
@@ -18,7 +18,7 @@ public class Superman extends SuperHeroes{
 
     public void attack() {
         super.attack();
-        System.out.println("Ayrıca," + getName() + "Superman uçarken Supersonic Flight-güçlü saldırılar gerçekleştirebilir.");
+        System.out.println("Ayrıca," + getName() + "Superman uçarken Supersonic Flight güçlü saldırılar gerçekleştirebilir.");
 
 
     }
@@ -30,7 +30,7 @@ public class Superman extends SuperHeroes{
     }
     public void printInfo() {
         super.printInfo();
-        System.out.println("Superman özelliği " +flyingAbility);
+        System.out.println("Superman'e has özelliği, " +flyingAbility);
 
 
     }

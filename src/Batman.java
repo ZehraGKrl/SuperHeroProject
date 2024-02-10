@@ -3,8 +3,8 @@ public class Batman extends SuperHeroes {
 
     private String detectiveSkillsAbility;
     public Batman(String name, String gender, String aggression, String wisdom, String beauty,String detectiveSkillsAbility) {
-        super(name, gender, aggression, wisdom, beauty);
-        setDetectiveSkillsAbility("Dedektif Becerileri");
+        super("Batman", "Erkek", "900", "950", "850");
+        setDetectiveSkillsAbility("Detective Abilities");
     }
 
     public String getDetectiveSkillsAbility() {
@@ -18,12 +18,12 @@ public class Batman extends SuperHeroes {
     @Override
     public void attack() {
         super.attack();
-        System.out.println("Ayrica"+getName()+"dedektif becerileri ile saldirabilir ve dusmanlarini planlayarak alt edebilir");
+        System.out.println("Ayrıca "+getName()+", dedektif becerileri ile saldirabilir ve düşmanlarını planlayarak alt edebilir");
     }
     @Override
     public void printInfo() {
         super.printInfo();
-        System.out.println("Ozellik= "+detectiveSkillsAbility);
+        System.out.println("Batman'e has özelliği, "+detectiveSkillsAbility);
 
     }
 
@@ -32,7 +32,7 @@ public class Batman extends SuperHeroes {
     @Override
     public void exposeSecretPower() {
         super.exposeSecretPower();
-        System.out.println(getName()+"dedektif becerilerine sahiptir ve bu yetenegiyle suclulari yakalamda ustalasmistir");
+        System.out.println(getName()+", dedektif becerilerine sahiptir ve bu yetenegiyle suclulari yakalamda ustalasmistir");
     }
 
 
