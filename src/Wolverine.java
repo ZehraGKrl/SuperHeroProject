@@ -4,8 +4,8 @@ public class Wolverine extends SuperHeroes {
     private String adamantiumClaws;
 
     public Wolverine(String name, String gender, String aggression, String wisdom, String beauty,String adamantiumClaws) {
-        super("Wolverine", "Erkek", "950", "700", "800");
-        setAdamantiumClaws("Adamantium Claws");
+        super(name, gender, aggression, wisdom, beauty);
+        setAdamantiumClaws(adamantiumClaws);
     }
 
     public String getAdamantiumClaws() {
@@ -25,7 +25,7 @@ public class Wolverine extends SuperHeroes {
 
     @Override
     public void exposeSecretPower() {
-        super.exposeSecretPower();
+
         System.out.println(getName() + ", adamantium pençeleri sahiptir ve " +
                 "bu pençeleriyle her türlü maddeyi kesip parçalayabilir.");
     }

@@ -8,13 +8,8 @@ public class SpiderMan extends SuperHeroes {
 
     ///////////////////////////////////////////////////////////////////////
     public SpiderMan(String name, String gender, String aggression, String wisdom, String beauty, String webShootingAbility) {
-        super("Spider Man","Erkek","700","750","800");
-        setWebShootingAbility("Web Shooting");
-        // TODO burada eksik olan kodu tamamlayin
-         // SpiderMan nesnesi oluşturulurken ilk bu metod (constructor) çalışacak...
-        //  SpiderMan'e özel bir güç var; bir de tüm süper kahramanların ortak özelliği var.
-        //  O ortak özelliğe erişmek için "super" anahtar kelimesini kullandığımızı unutmayın...
-
+        super(name, gender, aggression, wisdom, beauty);
+        setWebShootingAbility(webShootingAbility);
 
 
    }
@@ -43,7 +38,7 @@ public class SpiderMan extends SuperHeroes {
     public void exposeSecretPower() {
         //TODO: Bu metod çağrıldığında, örümcek adama has özelliği sadece konsola yazdırın.
         // getName() + ", örümcek ağı püskürtme yeteneğine sahiptir."
-        super.exposeSecretPower();
+
         System.out.println(getName() + ", örümcek ağı püskürtme yeteneğine sahiptir.");
 
 
