@@ -1,7 +1,7 @@
 
 public class SuperHeroes {
 
-    // TODO: BU CLASSTA BİR DEĞİŞİKLİK YAPMANIZA GEREK YOK
+
     private String name;
     private String gender;
     private String aggression;

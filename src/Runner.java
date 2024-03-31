@@ -53,8 +53,6 @@ public class Runner {
 
     }
 
-
-    // TODO Bu methodda bir degisiklik yapmayiniz
     private static List<String> getRemainingHeroes(List<String> allHeroes, List<String> activeHeroes) {
         List<String> remainingHeroes = new ArrayList<>(allHeroes);
         remainingHeroes.removeAll(activeHeroes);
